@@ -50,19 +50,21 @@ html(class="no-js", lang="en")
 					i.icon-twitter-squared
 				p.byline By 
 					a(href="" target="_blank") John Smith
-				p Researchers at Stanford University gathered data on more than 60 million police stops in the United States, revealing disparities in the way officers treat minority motorists.
+				p Researchers at Stanford University gathered data on more than 
+					a(href="https://github.com/baltimore-sun-data/police-stops" target="_blank") 60 million police 
+					| stops in the United States, revealing disparithttps://openpolicing.stanford.edu/findings/ies in the way officers treat minority motorists.
 				p Does a similar bias exist in Maryland, where the population is one of the most racially and socioeconomically diverse in the nation?
 			section
 				.container__text
 					p.subhead Who gets stopped?
 					p The racial breakdown of who police pulled over in Maryland roughly reflects the state population.
 				.container__media
-					p.subhead Maryland population compared to stopped motorists
+					p.mediaTitle Maryland population compared to stopped motorists
 					img(src=datalink + "images/graphic-0.png")
 				.container__text
 					p However, year-over-year data appears to show an increase in the percentage of stops with black motorists.
 				.container__media
-					p.subhead Percent of stopped motorists who were black
+					p.mediaTitle Percent of stopped motorists who were black
 					img(src="http://via.placeholder.com/750x400/2196F3/fff/?text=/+/+/")
 			section.blue
 				.container__text
@@ -71,7 +73,7 @@ html(class="no-js", lang="en")
 					p However, only three percent of the violations were equipment-related. Overall, there were no huge disparities between black, Hispanic and white motorists.
 					p Asian motorists had the highest rate of speeding and safe movement violations.
 				.container__media
-					p.subhead Violations
+					p.mediaTitle Violations
 					img(src="http://via.placeholder.com/750x400/2196F3/fff/?text=/+/+/")
 				.container__text
 			section
@@ -79,26 +81,26 @@ html(class="no-js", lang="en")
 					p.subhead Who gets searched and why?
 					p The data shows black and Hispanic motorists are the most likely to have their vehicle searched. Black motorists are searched at nearly twice the rate of white and Asian motorists.
 				.container__media
-					p.subhead Percent of stops resulting in a search
+					p.mediaTitle Percent of stops resulting in a search
 					img(src=datalink + "images/graphic-2.png")
 				.container__text
-					p According to the data, 45 percent of searches conducted on Hispanic motorists were incident to the arrest. In other words, their vehicles are searched after an arrest. Black motorists have the lowest rate of incident to arrest searches.
+					p According to the data, 45 percent of searches conducted on Hispanic motorists were incident to the arrest. In other words, these are counting searches occurring after an arrest. Black motorists have the lowest rate of incident to arrest searches at 22%.
 					p This statistic is flipped for searches conducted for probable cause. Black motorists were searched far more often for probable cause while Hispanic motorists have the lowest rate for probable cause.
 				.container__media
-					p.subhead Searches for probable cause
+					p.mediaTitle Searches for probable cause
 					img(src=datalink + "images/graphic-3.png")
 			section.red
 				.container__text
 					p.subhead Who's found with contraband?
 					p Although black and Hispanic motorists are searched most often, white and Asian drivers were more likely to have contraband when searched.
 				.container__media
-					p.subhead Contraband
+					p.mediaTitle Contraband chart
 					img(src="http://via.placeholder.com/750x400/FF5252/fff/?text=/+/+/")
 				.container__text
 					p This figure is at odds with national statistics analyzed by Stanford researchers. In the U.S., officers find contraband at similar rates between black and white drivers
 					p The gap grows larger when filtering for searches officers conducted for probable cause.
 				.container__media
-					p.subhead Contraband probable cause
+					p.mediaTitle Contraband probable cause
 					img(src="http://via.placeholder.com/750x400/FF5252/fff/?text=/+/+/")
 				.container__text
 					p The figures for Asian and Hispanic motorists are prone to error due to the sample sizes, but the difference is clear for black and white motorists in Maryland.
@@ -106,11 +108,44 @@ html(class="no-js", lang="en")
 			section
 				.container__text
 					p.subhead What was the outcome?
-					p Vestibulum ut sapien et justo bibendum porttitor. Morbi pulvinar lacus faucibus semper vulputate. Nam facilisis ac nibh non tempus. Integer et turpis sed ex aliquet dictum.
-					p Donec commodo rutrum lorem, molestie fermentum nisi porta at. Mauris pharetra vel dui id cursus. Etiam ac pharetra dui. Morbi sit amet pulvinar quam.
+					p Hispanic and black motorists were most likely to have their stop result in an arrest.
+					p White motorists were least likely to receive a citation and most likely to leave with a warning.
 				.container__media
-					p.subhead Vivamus id mauris in nisl vulputate
-					img(src="http://via.placeholder.com/750x400/FF5252/fff/?text=/+/+/")
+					p.mediaTitle Stop outcomes for:
+					.container__media__outcomes
+						.options
+							select
+								option (Race)
+								option Asian
+								option Black
+								option Hispanic
+								option Other
+								option White
+							select
+								option (Residency)
+								option Out-of-state
+								option In-state
+							select
+								option (Sex)
+								option Female
+								option Male
+						.outcomes
+							.outcomes__stat
+								p.outcomesStat.outcomesStat--0 0.6%
+								p are 
+									span arrested
+							.outcomes__stat
+								p.outcomesStat.outcomesStat--1 39.9%
+								p receive a 
+									span citation
+							.outcomes__stat
+								p.outcomesStat.outcomesStat--2 10.5%
+								p receive a 
+									span repair order
+							.outcomes__stat
+								p.outcomesStat.outcomesStat--3 49%
+								p receive a 
+									span warning
 				.container__text
 					p Nullam varius lorem vitae dui tempus, quis tristique quam lacinia. Duis felis erat, fringilla eget efficitur a, ullamcorper a dui.
 					p Suspendisse eget felis euismod, posuere magna consequat, fringilla lectus. Vestibulum accumsan, diam at eleifend sodales, leo felis imperdiet sem, a dignissim ligula eros sit amet turpis.
@@ -130,7 +165,7 @@ html(class="no-js", lang="en")
 		//- #leaderboard
 			include includes/ad-for-body.html
 
-		//Javascript
+		//Javascript0 auto
 		script(src=datalink + "js/min/jquery-3.0.0.min.js")
 		script(src=datalink + "js/app.js")
 		//- script(src=datalink + "js/min/app.min.js")

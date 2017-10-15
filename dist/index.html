@@ -58,7 +58,7 @@
         <h1>Maryland police stop data</h1>
         <div class="shareButtons"><i class="icon-facebook-squared"></i><i class="icon-twitter-squared"></i></div>
         <p class="byline">By <a href="" target="_blank">John Smith</a></p>
-        <p>Researchers at Stanford University gathered data on more than 60 million police stops in the United States, revealing disparities in the way officers treat minority motorists.</p>
+        <p>Researchers at Stanford University gathered data on more than <a href="https://github.com/baltimore-sun-data/police-stops" target="_blank">60 million police </a>stops in the United States, revealing disparithttps://openpolicing.stanford.edu/findings/ies in the way officers treat minority motorists.</p>
         <p>Does a similar bias exist in Maryland, where the population is one of the most racially and socioeconomically diverse in the nation?</p>
       </div>
       <section>
@@ -67,13 +67,13 @@
           <p>The racial breakdown of who police pulled over in Maryland roughly reflects the state population.</p>
         </div>
         <div class="container__media">
-          <p class="subhead">Maryland population compared to stopped motorists</p><img src="images/graphic-0.png">
+          <p class="mediaTitle">Maryland population compared to stopped motorists</p><img src="images/graphic-0.png">
         </div>
         <div class="container__text">
           <p>However, year-over-year data appears to show an increase in the percentage of stops with black motorists.</p>
         </div>
         <div class="container__media">
-          <p class="subhead">Percent of stopped motorists who were black</p><img src="http://via.placeholder.com/750x400/2196F3/fff/?text=/+/+/">
+          <p class="mediaTitle">Percent of stopped motorists who were black</p><img src="http://via.placeholder.com/750x400/2196F3/fff/?text=/+/+/">
         </div>
       </section>
       <section class="blue">
@@ -84,7 +84,7 @@
           <p>Asian motorists had the highest rate of speeding and safe movement violations.</p>
         </div>
         <div class="container__media">
-          <p class="subhead">Violations</p><img src="http://via.placeholder.com/750x400/2196F3/fff/?text=/+/+/">
+          <p class="mediaTitle">Violations</p><img src="http://via.placeholder.com/750x400/2196F3/fff/?text=/+/+/">
         </div>
         <div class="container__text"></div>
       </section>
@@ -94,14 +94,14 @@
           <p>The data shows black and Hispanic motorists are the most likely to have their vehicle searched. Black motorists are searched at nearly twice the rate of white and Asian motorists.</p>
         </div>
         <div class="container__media">
-          <p class="subhead">Percent of stops resulting in a search</p><img src="images/graphic-2.png">
+          <p class="mediaTitle">Percent of stops resulting in a search</p><img src="images/graphic-2.png">
         </div>
         <div class="container__text">
-          <p>According to the data, 45 percent of searches conducted on Hispanic motorists were incident to the arrest. In other words, their vehicles are searched after an arrest. Black motorists have the lowest rate of incident to arrest searches.</p>
+          <p>According to the data, 45 percent of searches conducted on Hispanic motorists were incident to the arrest. In other words, these are counting searches occurring after an arrest. Black motorists have the lowest rate of incident to arrest searches at 22%.</p>
           <p>This statistic is flipped for searches conducted for probable cause. Black motorists were searched far more often for probable cause while Hispanic motorists have the lowest rate for probable cause.</p>
         </div>
         <div class="container__media">
-          <p class="subhead">Searches for probable cause</p><img src="images/graphic-3.png">
+          <p class="mediaTitle">Searches for probable cause</p><img src="images/graphic-3.png">
         </div>
       </section>
       <section class="red">
@@ -110,14 +110,14 @@
           <p>Although black and Hispanic motorists are searched most often, white and Asian drivers were more likely to have contraband when searched.</p>
         </div>
         <div class="container__media">
-          <p class="subhead">Contraband</p><img src="http://via.placeholder.com/750x400/FF5252/fff/?text=/+/+/">
+          <p class="mediaTitle">Contraband chart</p><img src="http://via.placeholder.com/750x400/FF5252/fff/?text=/+/+/">
         </div>
         <div class="container__text">
           <p>This figure is at odds with national statistics analyzed by Stanford researchers. In the U.S., officers find contraband at similar rates between black and white drivers</p>
           <p>The gap grows larger when filtering for searches officers conducted for probable cause.</p>
         </div>
         <div class="container__media">
-          <p class="subhead">Contraband probable cause</p><img src="http://via.placeholder.com/750x400/FF5252/fff/?text=/+/+/">
+          <p class="mediaTitle">Contraband probable cause</p><img src="http://via.placeholder.com/750x400/FF5252/fff/?text=/+/+/">
         </div>
         <div class="container__text">
           <p>The figures for Asian and Hispanic motorists are prone to error due to the sample sizes, but the difference is clear for black and white motorists in Maryland.</p>
@@ -127,11 +127,51 @@
       <section>
         <div class="container__text">
           <p class="subhead">What was the outcome?</p>
-          <p>Vestibulum ut sapien et justo bibendum porttitor. Morbi pulvinar lacus faucibus semper vulputate. Nam facilisis ac nibh non tempus. Integer et turpis sed ex aliquet dictum.</p>
-          <p>Donec commodo rutrum lorem, molestie fermentum nisi porta at. Mauris pharetra vel dui id cursus. Etiam ac pharetra dui. Morbi sit amet pulvinar quam.</p>
+          <p>Hispanic and black motorists were most likely to have their stop result in an arrest.</p>
+          <p>White motorists were least likely to receive a citation and most likely to leave with a warning.</p>
         </div>
         <div class="container__media">
-          <p class="subhead">Vivamus id mauris in nisl vulputate</p><img src="http://via.placeholder.com/750x400/FF5252/fff/?text=/+/+/">
+          <p class="mediaTitle">Stop outcomes for:</p>
+          <div class="container__media__outcomes">
+            <div class="options">
+              <select>
+                <option>(Race)</option>
+                <option>Asian</option>
+                <option>Black</option>
+                <option>Hispanic</option>
+                <option>Other</option>
+                <option>White</option>
+              </select>
+              <select>
+                <option>(Residency)</option>
+                <option>Out-of-state</option>
+                <option>In-state</option>
+              </select>
+              <select>
+                <option>(Sex)</option>
+                <option>Female</option>
+                <option>Male</option>
+              </select>
+            </div>
+            <div class="outcomes">
+              <div class="outcomes__stat">
+                <p class="outcomesStat outcomesStat--0">0.6%</p>
+                <p>are <span>arrested</span></p>
+              </div>
+              <div class="outcomes__stat">
+                <p class="outcomesStat outcomesStat--1">39.9%</p>
+                <p>receive a <span>citation</span></p>
+              </div>
+              <div class="outcomes__stat">
+                <p class="outcomesStat outcomesStat--2">10.5%</p>
+                <p>receive a <span>repair order</span></p>
+              </div>
+              <div class="outcomes__stat">
+                <p class="outcomesStat outcomesStat--3">49%</p>
+                <p>receive a <span>warning</span></p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="container__text">
           <p>Nullam varius lorem vitae dui tempus, quis tristique quam lacinia. Duis felis erat, fringilla eget efficitur a, ullamcorper a dui.</p>
@@ -152,7 +192,7 @@
         </div>
       </section>
     </div>
-    <!--Javascript-->
+    <!--Javascript0 auto-->
     <script src="js/min/jquery-3.0.0.min.js"></script>
     <script src="js/app.js"></script>
   </body>

@@ -481,43 +481,49 @@ a {
   width: 100%;
   margin-top: 50px; }
   .container section {
-    padding: 1em 0; }
+    padding-bottom: 1em; }
     .container section.red {
       background-color: #FF5252;
       color: #FFFFFF; }
+      .container section.red .subhead {
+        background-color: #ff0606; }
     .container section.blue {
       background-color: #2196F3;
       color: #FFFFFF; }
-  .container__text {
+      .container section.blue .subhead {
+        background-color: #1976D2; }
+  .container__text p {
     max-width: 720px;
-    margin: 0 auto;
-    padding: 0 1em; }
-    .container__text p {
-      line-height: 1.3em; }
-      .container__text p.subhead {
-        margin: .2em 0;
-        font-size: 1.7em; }
-        .container__text p.subhead span {
-          font-weight: bold;
-          color: #FF5252; }
-    .container__text--header {
+    margin: 1em  auto;
+    padding: 0 1em;
+    line-height: 1.3em; }
+    .container__text p.subhead {
       max-width: none;
-      padding: .5em 0 2em 0;
-      background-color: #FF5252;
-      color: white;
+      margin: .5em auto;
+      padding: .5em;
+      font-size: 1.7em;
       text-align: center; }
-      .container__text--header h1 {
-        font-family: "Old Standard TT", serif;
-        text-transform: uppercase;
-        font-size: 2.5em; }
-      .container__text--header p {
-        max-width: 500px;
-        margin: 1em auto; }
-        .container__text--header p.byline {
-          margin: 1em auto;
-          font-weight: bold; }
-          .container__text--header p.byline a {
-            color: white; }
+      .container__text p.subhead span {
+        font-weight: bold;
+        color: #FF5252; }
+  .container__text--header {
+    max-width: none;
+    padding: .5em 0 2em 0;
+    background-color: #FF5252;
+    color: white;
+    text-align: center; }
+    .container__text--header h1 {
+      font-family: "Old Standard TT", serif;
+      text-transform: uppercase;
+      font-size: 2.5em; }
+    .container__text--header p {
+      max-width: 500px;
+      margin: 1em auto; }
+      .container__text--header p.byline {
+        margin: 1em auto;
+        font-weight: bold; }
+        .container__text--header p.byline a {
+          color: white; }
   .container__media {
     position: relative;
     width: 100%;
@@ -530,11 +536,11 @@ a {
       padding: 0 1em;
       max-width: 500px;
       margin: 1em auto; }
-      .container__media p.subhead {
+      .container__media p.mediaTitle {
         font-size: 1.2em;
         font-family: "Montserrat", sans-serif;
         text-transform: uppercase; }
-        .container__media p.subhead span {
+        .container__media p.mediaTitle span {
           font-weight: bold;
           color: #FF5252; }
     .container__media img {
@@ -548,6 +554,21 @@ a {
     .container__media--wide {
       max-width: none;
       background-color: #FF5252; }
+    .container__media__outcomes .options {
+      margin-bottom: 2em; }
+    .container__media__outcomes .outcomes {
+      width: 100%; }
+      .container__media__outcomes .outcomes__stat p {
+        margin: 0 auto 1.5em auto;
+        text-transform: uppercase; }
+        .container__media__outcomes .outcomes__stat p span {
+          font-weight: bold;
+          color: #1976D2; }
+      .container__media__outcomes .outcomes__stat .outcomesStat {
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: 2em;
+        color: #1976D2; }
 
 .shareButtons {
   font-size: 1.2em;

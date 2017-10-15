@@ -8,14 +8,15 @@
 @import "normalize";
 @import "fonts";
 
-$primary-color-dark:   #1976D2;
-$primary-color:        #2196F3;
-$primary-color-light:  #BBDEFB;
-$primary-color-text:   #FFFFFF;
-$accent-color:         #FF5252;
-$primary-text-color:   #212121;
-$secondary-text-color: #757575;
-$divider-color:        #BDBDBD;
+$primary-color-dark:	#1976D2;
+$primary-color:			#2196F3;
+$primary-color-light:	#BBDEFB;
+$primary-color-text:	#FFFFFF;
+$accent-color:			#FF5252;
+$accent-color-dark: 	darken($accent-color, 15);
+$primary-text-color:	#212121;
+$secondary-text-color:	#757575;
+$divider-color:			#BDBDBD;
 
 body {
 	color: $offblack;
@@ -37,25 +38,34 @@ a {
 	width: 100%;
 	margin-top: 50px;
 	section {
-		padding: 1em 0;
+		padding-bottom: 1em;
 		&.red {
 			background-color: $accent-color;
 			color: $primary-color-text;
+			.subhead {
+				background-color: $accent-color-dark;
+			}
 		}
 		&.blue {
 			background-color: $primary-color;
 			color: $primary-color-text;
+			.subhead {
+				background-color: $primary-color-dark;
+			}
 		}
 	}
 	&__text {
-		max-width: 720px;
-		margin: 0 auto;
-		padding: 0 1em;
 		p {
+			max-width: 720px;
+			margin: 1em  auto;
+			padding: 0 1em;
 			line-height: 1.3em;
 			&.subhead {
-				margin: .2em 0;
+				max-width: none;
+				margin: .5em auto;
+				padding: .5em;
 				font-size: 1.7em;
+				text-align: center;
 				span {
 					font-weight: bold;
 					color: $accent-color;
@@ -98,7 +108,7 @@ a {
 			padding: 0 1em;
 			max-width: 500px;
 			margin: 1em auto;
-			&.subhead {
+			&.mediaTitle {
 				font-size: 1.2em;
 				font-family: $montserrat;
 				text-transform: uppercase;
@@ -120,6 +130,31 @@ a {
 		&--wide {
 			max-width: none;
 			background-color: $accent-color;
+		}
+		&__outcomes {
+			.options {
+				margin-bottom: 2em;
+			}
+			.outcomes {
+				width: 100%;
+
+				&__stat {
+					p {
+						margin: 0 auto 1.5em auto;
+						text-transform: uppercase;
+						span {
+							font-weight: bold;
+							color: $primary-color-dark;
+						}
+					}
+					.outcomesStat {
+						margin: 0 auto;
+						font-weight: bold;
+						font-size: 2em;
+						color: $primary-color-dark;
+					}
+				}
+			}
 		}
 	}
 }
