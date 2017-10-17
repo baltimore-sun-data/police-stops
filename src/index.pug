@@ -50,9 +50,9 @@ html(class="no-js", lang="en")
 					i.icon-twitter-squared
 				p.byline By 
 					a(href="" target="_blank") John Smith
-				p Researchers at Stanford University gathered data on more than 
-					a(href="https://github.com/baltimore-sun-data/police-stops" target="_blank") 60 million police 
-					| stops in the United States, revealing disparithttps://openpolicing.stanford.edu/findings/ies in the way officers treat minority motorists.
+				p Researchers at Stanford University gathered data on more than 60 million police stops in the United States, 
+					a(href="https://openpolicing.stanford.edu/findings/" target="_blank") revealing disparities
+					|  in the way officers treat minority motorists.
 				p Does a similar bias exist in Maryland, where the population is one of the most racially and socioeconomically diverse in the nation?
 			section
 				.container__text
@@ -110,25 +110,27 @@ html(class="no-js", lang="en")
 					p.subhead What was the outcome?
 					p Hispanic and black motorists were most likely to have their stop result in an arrest.
 					p White motorists were least likely to receive a citation and most likely to leave with a warning.
-				.container__media
+				.container__media.container__media--outcomes
 					p.mediaTitle Stop outcomes for:
-					.container__media__outcomes
-						.options
-							select
-								option (Race)
-								option Asian
-								option Black
-								option Hispanic
-								option Other
-								option White
-							select
-								option (Residency)
-								option Out-of-state
-								option In-state
-							select
-								option (Sex)
-								option Female
-								option Male
+						.options.options--outcomes
+							select.outcomes--0
+								option(value="0" disabled selected) Race (All)
+								option(value="0") All
+								option(value="1") Asian
+								option(value="2") Black
+								option(value="3") Hispanic
+								option(value="4") Other
+								option(value="5") White
+							select.outcomes--1
+								option(value="0" disabled selected) Residency (All)
+								option(value="0") All
+								option(value="1") In-state
+								option(value="2") Out-of-state
+							select.outcomes--2
+								option(value="0" disabled selected) Sex (All)
+								option(value="0") All
+								option(value="1") Female
+								option(value="2") Male
 						.outcomes
 							.outcomes__stat
 								p.outcomesStat.outcomesStat--0 0.6%
@@ -146,6 +148,9 @@ html(class="no-js", lang="en")
 								p.outcomesStat.outcomesStat--3 49%
 								p receive a 
 									span warning
+							.outcomes__sample
+								p Sample size: 
+									span.outcomesStat--4 944,728
 				.container__text
 					p Nullam varius lorem vitae dui tempus, quis tristique quam lacinia. Duis felis erat, fringilla eget efficitur a, ullamcorper a dui.
 					p Suspendisse eget felis euismod, posuere magna consequat, fringilla lectus. Vestibulum accumsan, diam at eleifend sodales, leo felis imperdiet sem, a dignissim ligula eros sit amet turpis.

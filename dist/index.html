@@ -34,7 +34,7 @@
   </head>
   <body><script>
 	((((window.trb || (window.trb = {})).data || (trb.data = {})).metrics || (trb.data.metrics = {})).thirdparty = {
-		pageName: 'bs:dataproject:news:maryland:---:dataproject.',
+		pageName: 'bs:dataproject:news:maryland:police-stops:dataproject.',
 		channel: 'news:maryland',
 		server: 'data.baltimoresun.com',
 		hier1: 'baltimoresun:news:maryland',
@@ -58,7 +58,7 @@
         <h1>Maryland police stop data</h1>
         <div class="shareButtons"><i class="icon-facebook-squared"></i><i class="icon-twitter-squared"></i></div>
         <p class="byline">By <a href="" target="_blank">John Smith</a></p>
-        <p>Researchers at Stanford University gathered data on more than <a href="https://github.com/baltimore-sun-data/police-stops" target="_blank">60 million police </a>stops in the United States, revealing disparithttps://openpolicing.stanford.edu/findings/ies in the way officers treat minority motorists.</p>
+        <p>Researchers at Stanford University gathered data on more than 60 million police stops in the United States, <a href="https://openpolicing.stanford.edu/findings/" target="_blank">revealing disparities</a> in the way officers treat minority motorists.</p>
         <p>Does a similar bias exist in Maryland, where the population is one of the most racially and socioeconomically diverse in the nation?</p>
       </div>
       <section>
@@ -130,27 +130,29 @@
           <p>Hispanic and black motorists were most likely to have their stop result in an arrest.</p>
           <p>White motorists were least likely to receive a citation and most likely to leave with a warning.</p>
         </div>
-        <div class="container__media">
-          <p class="mediaTitle">Stop outcomes for:</p>
-          <div class="container__media__outcomes">
-            <div class="options">
-              <select>
-                <option>(Race)</option>
-                <option>Asian</option>
-                <option>Black</option>
-                <option>Hispanic</option>
-                <option>Other</option>
-                <option>White</option>
+        <div class="container__media container__media--outcomes">
+          <p class="mediaTitle">Stop outcomes for:
+            <div class="options options--outcomes">
+              <select class="outcomes--0">
+                <option value="0" disabled selected>Race (All)</option>
+                <option value="0">All</option>
+                <option value="1">Asian</option>
+                <option value="2">Black</option>
+                <option value="3">Hispanic</option>
+                <option value="4">Other</option>
+                <option value="5">White</option>
               </select>
-              <select>
-                <option>(Residency)</option>
-                <option>Out-of-state</option>
-                <option>In-state</option>
+              <select class="outcomes--1">
+                <option value="0" disabled selected>Residency (All)</option>
+                <option value="0">All</option>
+                <option value="1">In-state</option>
+                <option value="2">Out-of-state</option>
               </select>
-              <select>
-                <option>(Sex)</option>
-                <option>Female</option>
-                <option>Male</option>
+              <select class="outcomes--2">
+                <option value="0" disabled selected>Sex (All)</option>
+                <option value="0">All</option>
+                <option value="1">Female</option>
+                <option value="2">Male</option>
               </select>
             </div>
             <div class="outcomes">
@@ -170,8 +172,11 @@
                 <p class="outcomesStat outcomesStat--3">49%</p>
                 <p>receive a <span>warning</span></p>
               </div>
+              <div class="outcomes__sample">
+                <p>Sample size: <span class="outcomesStat--4">944,728</span></p>
+              </div>
             </div>
-          </div>
+          </p>
         </div>
         <div class="container__text">
           <p>Nullam varius lorem vitae dui tempus, quis tristique quam lacinia. Duis felis erat, fringilla eget efficitur a, ullamcorper a dui.</p>
